@@ -7,30 +7,15 @@ public class MainClassTest extends MainClass{
     {
         int a= this.getLocalNumber();
         boolean b =false;
-        if(a==14)
-        {
-            b=true;
-        } else
-        {
-            b=false;
-        }
-        assert b;
+        assert a==14;
+
     }
 
     @Test
     public void testGetClassNumber()
     {
         int a=this.getClassNumber();
-        boolean b = false;
-        if (a>45)
-        {
-            b = true;
-        }
-        else
-        {
-            b=false;
-        }
-        assert b;
+        assert a>45;
     }
 
     @Test
